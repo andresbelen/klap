@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 90%;
+} 
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+body{
+    /* background-color: #6ea0e0; */
+    background-image: url(../img/evento_airelibre.jpg);
+    background-size: cover;
+}
+/*
+.abrir{
+    display: none;
+}
+.cerrar{
+    display: none;
+}
+*/
+ul{
+    list-style: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); 
+
+}
+nav li{
+    display: inline-block;
+    font-size: 2em;
+    padding: 5px;
+    margin: 5px;
+}
+nav li a{
+    text-decoration: none;
+    transition: color 0.8s linear 0.2s;
+}
+nav li a:hover{
+    color: rgb(0, 0, 0);
+
+}
+.logo {
+    width: 200px; height: 150px;
+}
+.carousel-indicators li{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+.somos1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.somos1 div{
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid black;
+}
+.contenidoq{
+    background-color: rgba(255, 255, 255, 0.9); 
+}
+.contenidoq h3{
+    align-self: center;
+    font-size: 2rem;
+    padding: 5px;
+    margin: 10px;
+    text-decoration: underline;
+}
+.contenidoq p{
+    align-self: center;
+    font-size: 2rem;
+    padding: 5px;
+    margin: 10px;
+    font-style: italic;
+}
+.mapa{
+justify-self: center;
+align-self: center;
+border-radius: 10px;
+}
+.mapa iframe{
+    border-radius: 10px;
+}
+.c1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.c1 div{
+    background-color: rgba(255, 255, 255, 0.9); 
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 1px black solid;
+}
+.c1 img{
+    padding: 10px;
+    border-radius: 50%;
+}
+.c1 h3{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+    padding: 5px;
+    margin: 10px;
+}
+.c1 li{
+    font-size: 2rem;
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+}
+.galeria iframe{
+ width: 1fr;
+ height: 300px;
+ justify-self: center;
+ align-self: center;
+}
+.back{
+    font-size: 20px;
+}
+form{
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 5px;
+}
+
+
+@media (max-width: 768px) {
+    body{
+        background-size: contain;
+    }
+    /*header nav{
+        display: none;
+    }
+    
+    header .abrir{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 50px;
+    }
+    #nav:target{
+        display: block;
+    }
+    */
+    nav ul{
+        font-size: 0.6rem;
+    }
+    .container a img{
+        width: 30px;
+        height: 30px;
+    }
+    .somos1{
+        display: block;
+    }
+    .somos1 div{
+        border: none;
+    }
+    .contenidoq{
+        text-align: center;
+    }
+    .contenidoq p{
+        font-size: 1.5rem;
+    }
+    .mapa{
+        display: flex;
+    }
+    .c1{
+        display: block;
+    }
+    .c1 img{
+        max-width: -webkit-fill-available; 
+    }
+    .galeria{
+        display: block;
+        text-align: center;
+    }
+    .galeria iframe{
+        margin: 15px;
+        height: auto;
+    }
+}

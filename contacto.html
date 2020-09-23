@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contacto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-4 pl-0">
+                <img src="img/logo.jpg" alt="logo" class="logo"/>
+              </div>
+              <div class="col-5">
+                <ul>
+                  <li>
+                    <a href="index.html">INICIO</a>
+                  </li>
+                  <li>
+                    <a href="qsomos.html">QUIENES SOMOS</a>
+                  </li>
+                  <li>
+                    <a href="qhacemos.html">QUE HACEMOS</a>
+                  </li>
+                  <li>
+                    <a href="galeria.html">VIDEOS</a>
+                  </li>
+                  <li>
+                    <a href="contacto.html">CONTACTO</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </nav>
+      <hr />
+    </header>
+    <div class="container">
+      <form action="#">
+          <legend>Datos personales</legend>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+              <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingresa tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="mail">Mail:</label>
+              <input type="email" id="mail" name="mail" class="form-control" placeholder="Ingresa tu mail" required>
+            </div>
+          <legend>Tipo de Evento</legend>
+          <div>
+            <label for="eventosoc">Evento Social</label>
+            <input
+              type="radio"
+              name="evento"
+              id="eventosoc"
+              value="social"
+              checked
+            />
+            <label for="eventocor">Evento Corporativo</label>
+            <input
+              type="radio"
+              name="evento"
+              id="eventocor"
+              value="corporativo"
+            />
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
+          </div>
+        <div>
+            <button type="submit" class="btn btn-primary">Enviar</button>        
+        </div>
+      </form>
+    </div>
+    <a href="index.html" class="back">Volver al incio</a>
+    <footer>
+      <br>
+      <hr>
+      <div class="redes">
+          <a href="https://www.facebook.com/Klap-Eventos-190011428291815"><img src="icons/facebook2.png" alt="Facebook"></a>
+          <a href="https://twitter.com/klap_eventos?lang=es"><img src="icons/twitter2.png" alt="Twitter"></a>
+          <a href="https://www.instagram.com/klap_eventos/"><img src="icons/instagram3.png" alt="Instagram"></a>
+          <a href="https://open.spotify.com/user/ab7ne1gmvm8z00frj1wadqbgv?si=5-wvWDiqRsKqSoD27YAVqw"><img src="icons/spotify2.png" alt="Spotify"></a>
+          <a href="https://www.youtube.com/channel/UCR2RvqGSBLuyRcz6pWMvLPg"><img src="icons/youtube.png" alt="Youtube"></a>
+  
+      </div>        
+  </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
