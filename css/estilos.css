@@ -11,11 +11,10 @@ header{
     position: sticky;
     top: 0;
     z-index: 1;
+    background-color: rgba(255, 255, 255, 0.9); 
 }
 body{
-    /* background-color: #6ea0e0; */
-    background-image: url(../img/evento_airelibre.jpg);
-    background-size: cover;
+    background-color: rgba(46, 46, 46, 0.425) ;
 }
 /*
 .abrir{
@@ -33,12 +32,10 @@ nav{
     justify-content: space-between;
     align-items: flex-end;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.9); 
-
 }
 nav li{
     display: inline-block;
-    font-size: 2em;
+    font-size: 22px;
     padding: 5px;
     margin: 5px;
 }
@@ -86,7 +83,7 @@ nav li a:hover{
 }
 .contenidoq p{
     align-self: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 5px;
     margin: 10px;
     font-style: italic;
@@ -123,7 +120,7 @@ border-radius: 10px;
     margin: 10px;
 }
 .c1 li{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .galeria{
     display: grid;
