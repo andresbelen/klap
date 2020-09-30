@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 html{
     font-family: 'Roboto', sans-serif;
@@ -75,6 +77,7 @@ nav li a:hover{
     background-color: rgba(255, 255, 255, 0.9); 
 }
 .contenidoq h3{
+    font-family:'Cinzel', serif;
     align-self: center;
     font-size: 2rem;
     padding: 5px;
@@ -109,9 +112,10 @@ border-radius: 10px;
 }
 .c1 img{
     padding: 10px;
-    border-radius: 50%;
+    border-radius: 30%;
 }
 .c1 h3{
+    font-family: 'Cinzel', serif;
     text-decoration: underline;
     text-align: center;
     font-size: 2rem;
