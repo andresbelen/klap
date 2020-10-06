@@ -5,75 +5,47 @@
     <title>Que hacemos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header>
-        <nav>
-            <img src="img/logo.jpg" alt="logo" class="logo">
-            <ul>
-                <li>
-                    <a href="index.html">INICIO</a>
-                </li>
-                <li>
-                    <a href="qsomos.html">QUIENES SOMOS</a>
-                </li>
-                <li>
-                    <a href="qhacemos.html">QUE HACEMOS</a>
-                </li>
-                <li>
-                    <a href="galeria.html">VIDEOS</a>
-                </li>
-                <li>
-                    <a href="contacto.html">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
-        <hr>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="img/logo.jpg" alt="Logo" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                <a class="nav-link active" href="index.html">INICIO <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="qsomos.html">Quienes Somos</a>
+                <a class="nav-link" href="qhacemos.html">Que hacemos</a>
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </div>
+            </div>
+          </nav>
     </header>
-    <section class="c1">
-        <div>
-        <ul>
-        <li><h3>Eventos Sociales</h3>
-            <ul><li>
-                Cumpleaños          
-                </li>
-                <li>
-                15 Años
-                </li>
-                <li>
-                Casamientos        
-                </li>
-                <li>
-                Aniversarios    
-                </li>
-            </ul>
-        </li>
-    </ul>
-    <img src="img/evensoc.jpg" alt="Evento Social">
-</div>
-<div>
-    <ul>
-            <li><h3>Eventos Corporativos</h3>
-                <ul>
-                    <li>
-                    Fiestas de Fin de Año 
-                    </li>
-                    <li>
-                    Aniversarios
-                    </li>
-                    <li>
-                    Convenciones Empresariales
-                    </li>
-                    <li>
-                    Inauguraciones
-                    </li>
-                </ul>
-        </li>
-    </ul>
-    <img src="img/evencorp.jpg" alt="Evento Corporativo">
-</div>
-    </section>
+        <div id="servicios">
+            <img src="imgopt/casamiento.jpg" alt="Boda">
+            <p>Casamientos <br><br> Aniversarios</p>
+        </div>
+        <div id="servicios">
+            <p>XV Años</p>
+            <img src="imgopt/evensoc.jpg" alt="15 Años">
+        </div>
+        <div id="servicios">
+            <img src="imgopt/cumple.jpg" alt="Cumpleaños">
+            <p>Cumpleaños</p>
+        </div>
+        <div id="servicios">
+            <p>Fiestas de Fin de Año</p>
+            <img src="imgopt/evencorp.jpg" alt="Evento Corporativo">
+        </div>
+        <div id="servicios">
+            <img src="imgopt/aniversario.jpg" alt="Aniversario">
+            <p>Aniversarios Empresariales</p>
+        </div>
     <a href="index.html" class="back">Volver al incio</a>
     <footer>
         <hr>
@@ -85,6 +57,8 @@
             <a href="https://www.youtube.com/channel/UCR2RvqGSBLuyRcz6pWMvLPg"><img src="icons/youtube.png" alt="Youtube"></a>
         </div>        
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>   
 </body>
 </html>

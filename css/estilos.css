@@ -13,19 +13,11 @@ header{
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.9); 
+    background-color: rgba(255, 255, 255, 0.938); 
 }
 body{
-    background-color: rgba(46, 46, 46, 0.425) ;
+    background-color: rgb(0, 0, 0) ;
 }
-/*
-.abrir{
-    display: none;
-}
-.cerrar{
-    display: none;
-}
-*/
 ul{
     list-style: none;
 }
@@ -35,19 +27,10 @@ nav{
     align-items: flex-end;
     align-items: center;
 }
-nav li{
-    display: inline-block;
-    font-size: 22px;
-    padding: 5px;
-    margin: 5px;
-}
-nav li a{
-    text-decoration: none;
-    transition: color 0.8s linear 0.2s;
-}
-nav li a:hover{
-    color: rgb(0, 0, 0);
-
+nav div a{
+    font-size: 25px;
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
 }
 .logo {
     width: 200px; height: 150px;
@@ -63,6 +46,9 @@ nav li a:hover{
     align-items: flex-end;
     margin-top: 10px;
 }
+.redes a{
+    margin: 10px;
+}
 .somos1{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -74,7 +60,8 @@ nav li a:hover{
     border: 1px solid black;
 }
 .contenidoq{
-    background-color: rgba(255, 255, 255, 0.9); 
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10%; 
 }
 .contenidoq h3{
     font-family:'Cinzel', serif;
@@ -94,37 +81,28 @@ nav li a:hover{
 .mapa{
 justify-self: center;
 align-self: center;
-border-radius: 10px;
+border-radius: 10%;
 }
 .mapa iframe{
     border-radius: 10px;
 }
-.c1{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+#servicios{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.c1 div{
-    background-color: rgba(255, 255, 255, 0.9); 
-    margin: 10px;
-    padding: 10px;
+#servicios p{
+    font-family: 'Cormorant Garamond', serif;
     text-align: center;
-    border: 1px black solid;
+    font-size: 4rem;
+    padding: 90px;
+    color: rgb(199, 99, 166);
 }
-.c1 img{
-    padding: 10px;
-    border-radius: 30%;
-}
-.c1 h3{
-    font-family: 'Cinzel', serif;
-    text-decoration: underline;
-    text-align: center;
-    font-size: 2rem;
-    font-style: italic;
-    padding: 5px;
-    margin: 10px;
-}
-.c1 li{
-    font-size: 1.5rem;
+#servicios img{
+    margin: 20px;
+    width: 50%;
+    height: 70%;
+    border-radius: 20%;
 }
 .galeria{
     display: grid;
@@ -137,39 +115,33 @@ border-radius: 10px;
  height: 300px;
  justify-self: center;
  align-self: center;
+ padding: 20px;
 }
 .back{
     font-size: 20px;
     margin: 50px;
     display: block;
+    color: rgb(199, 99, 166);
 }
 form{
     background-color: rgba(255, 255, 255, 0.9); 
     padding: 5px;
 }
-
+footer{
+    background-color: rgba(255, 255, 255, 0.938); 
+}
 
 @media (max-width: 768px) {
-    body{
-        background-size: contain;
+    nav div a{
+        font-size: 20px;
+        padding: 5px;
+        margin: 5px;
+
     }
-    /*header nav{
-        display: none;
-    }
-    
-    header .abrir{
-        display: block;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        width: 50px;
-    }
-    #nav:target{
-        display: block;
-    }
-    */
-    nav ul{
-        font-size: 0.6rem;
+    .logo{
+        width: 150px;
+        height: 100%;
+        margin: 15px, 15px;
     }
     .container a img{
         width: 30px;
@@ -177,6 +149,7 @@ form{
     }
     .somos1{
         display: block;
+        border-radius: 0;
     }
     .somos1 div{
         border: none;
@@ -190,18 +163,17 @@ form{
     .mapa{
         display: flex;
     }
-    .c1{
+    #servicios p{
+        font-size: 1.2rem;
         display: block;
-    }
-    .c1 img{
-        max-width: -webkit-fill-available; 
+        padding: 20px;
+        font-weight: bold;
     }
     .galeria{
         display: block;
         text-align: center;
     }
     .galeria iframe{
-        margin: 15px;
         height: auto;
     }
 }

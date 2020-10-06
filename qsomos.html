@@ -6,34 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header>
-        <!--<a href="#nav"><img src="icons/lista.png" alt="" class="abrir"></a>-->
-        <nav>
-            <img src="img/logo.jpg" alt="logo" class="logo">
-            <!--<a href="#"><img src="icons/cerrar.png" alt="" class="cerrar"></a>-->
-            <ul>
-                <li>
-                    <a href="index.html">INICIO</a>
-                </li>
-                <li>
-                    <a href="qsomos.html">QUIENES SOMOS</a>
-                </li>
-                <li>
-                    <a href="qhacemos.html">QUE HACEMOS</a>
-                </li>
-                <li>
-                    <a href="galeria.html">VIDEOS</a>
-                </li>
-                <li>
-                    <a href="contacto.html">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
-        <hr>
-    </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="img/logo.jpg" alt="Logo" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                <a class="nav-link active" href="index.html">INICIO <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="qsomos.html">Quienes Somos</a>
+                <a class="nav-link" href="qhacemos.html">Que hacemos</a>
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </div>
+            </div>
+          </nav>
+            </header>
     <div class="somos1">
         <div class="contenidoq">
         <h3>SOBRE NOSOTROS</h3>
@@ -48,9 +40,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d686.0995403280413!2d-60.49488685756346!3d-35.11525435250723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bede83788d4319%3A0x9b77d88726166a3d!2sKlap%20Noches%20Magicas!5e0!3m2!1ses-419!2sar!4v1598917209114!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>    
     </div>
-    <a href="index.html" class="back">Volver al incio</a>
     <footer>
-        <br>
         <hr>
         <div class="redes">
             <a href="https://www.facebook.com/Klap-Eventos-190011428291815"><img src="icons/facebook.png" alt="Facebook"></a>
@@ -60,5 +50,8 @@
             <a href="https://www.youtube.com/channel/UCR2RvqGSBLuyRcz6pWMvLPg"><img src="icons/youtube.png" alt="Youtube"></a>
         </div>        
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>   
 </body>
 </html>
